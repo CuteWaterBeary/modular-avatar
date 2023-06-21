@@ -9,7 +9,7 @@ namespace nadena.dev.modular_avatar.core
     [AddComponentMenu("Modular Avatar/MA Menu Group")]
     public class ModularAvatarMenuGroup : MenuSourceComponent
     {
-        private bool recursing = false;
+        // private bool recursing = false;
 
         public GameObject targetObject;
 

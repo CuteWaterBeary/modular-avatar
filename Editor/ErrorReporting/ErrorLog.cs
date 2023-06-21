@@ -201,7 +201,7 @@ namespace nadena.dev.modular_avatar.editor.ErrorReporting
             stacktrace = e.ToString() + additionalStackTrace;
         }
 
-        public string ToString()
+        override public string ToString()
         {
             return "[" + reportLevel + "] " + messageCode + " " + "subst: " + string.Join(", ", substitutions);
         }
@@ -248,7 +248,7 @@ namespace nadena.dev.modular_avatar.editor.ErrorReporting
                 var data = File.ReadAllText(Path);
                 return JsonConvert.DeserializeObject<BuildReport>(data);
             }
-            catch (Exception e)
+            catch
             {
                 return null;
             }
