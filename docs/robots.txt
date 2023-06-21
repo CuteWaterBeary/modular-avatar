@@ -1,4 +1,0 @@
-﻿User-agent: *
-Disallow: /dev/
-
-Sitemap: https://modular-avatar.nadena.dev/sitemap.xml
